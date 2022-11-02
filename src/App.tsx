@@ -1,13 +1,8 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import List from './components/List';
 import Form from './components/Form';
-interface Sub {
-  nick: string,
-  avatar: string
-  subMonths: number 
-  description?: string
-}
+import Sub from './types';
 
 interface AppState {
   subs: Array<Sub>
